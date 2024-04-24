@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to right, #bb99db, #8d8dc9);
+    display: flex;
+    font-size: 50px;
+    flex-direction: column; 
+    justify-content: ;
+    gap:100px
+}
+div {
+    border:2px solid red; 
+    border-radius:10px;
+    background:lightblue;
+}
