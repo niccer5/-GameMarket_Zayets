@@ -34,19 +34,25 @@ flex-wrap: wrap;
 justify-content: space-between;
 }
 .item {
-    min-width: 200px;
+    min-width: 180px;
     min-height: 400px;
     margin-bottom: 10px;
     padding:10px;
     background-color: #ffffff;
-    border: 1px solid rgb(194 ,194,184);
+    border: 1px solid rgb(194 ,194,194);
     border-radius: 5px; 
     box-shadow: 0 0 7px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.item-title {
+    font-weight: bold;
 
+}
+.item-image {
+    height: 200px;
+}
 .contacts p {
 margin: 3px;
 }
