@@ -19,3 +19,13 @@ for (let i= 0; i < 100; i++){
 console.log('Блок товарів не знайдено')
 
 }
+let itemsArray = ['Газонокосарка 43',
+'Електричний тример 110',
+'Електрична газонокосарка',
+'Акумуляторний оприскувач 12' ,
+'Газонокосарка 430' ,
+'Електричний тример 110']
+console.log(itemsArray)
+for (let i=0 ;i< itemsArray.length; i++ ) {
+    console.log(itemsArray[i])
+}
