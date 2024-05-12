@@ -1,31 +1,54 @@
 //Перевірка підключення
-console.log('Перевірка чи підключено market.js')
+//console.log('Перевірка чи підключено market.js')
+// Визначення масиву товарів
+let itemsArray = [
+    'Газонокосарка 43',
+    'Електричний тример 110',
+    'Електрична газонокосарка 32',
+    'Акумуляторний оприскувач 12 N',
+]
+
 //Отримання елементу з ідентифікатором items
 let itemsDiv = document.getElementById("items");
+
 //Перевірка існування блоку
 if (itemsDiv) {
-//Вивід знайденого елементу
-    console.log(itemsDiv)
-//Додавання відформатованого HTML коду в блок
-// itemsDiv.innerHTML += '<div class = "item"></div>'
-// itemsDiv.innerHTML += '<div class = "item"></div>'
-// itemsDiv.innerHTML += '<div class = "item"></div>'
-// itemsDiv.innerHTML += '<div class = "item"></div>'
-for (let i= 0; i < 100; i++){
-    itemsDiv.innerHTML += '<div class = "item"></div>'
-}
+    //Створення блоків по кількості елементів масиву
+    itemsArray.forEach((item,index) => {
+        // console.log(item)
+        //Виводимо на веб сторінку елемент масиву в блок з класом item
+        itemsDiv.innerHTML +=
+            `
+        <div class = "item">
+      <h2>Товар №${index}</h2>
+      <p>${item}</p>
+      </div>
+      `
+    })
+
 } else {
     //Повідомлення про не знайдений блок
-console.log('Блок товарів не знайдено')
+    console.log('Блок товарів не знайдено')
 
 }
-let itemsArray = ['Газонокосарка 43',
-'Електричний тример 110',
-'Електрична газонокосарка',
-'Акумуляторний оприскувач 12' ,
-'Газонокосарка 430' ,
-'Електричний тример 110']
-console.log(itemsArray)
-for (let i=0 ;i< itemsArray.length; i++ ) {
-    console.log(itemsArray[i])
-}
+
+//Виведення едементів масиву
+itemsArray.forEach((item) => {
+    console.log(item)
+})
+//Виведення елементів відсортованого масиву
+// itemsArray.sort().forEach((item, index) => {
+//     console.log(index + '-й елемент:',item)
+// })
+
+
+
+// // //Виведення в консоль масиву
+// // console.log (itemsArray)
+// //Сортування масиву
+// itemsArray = itemsArray.sort()
+
+// //Виведення в консоль номерів та значень елементів масиву
+// for (let i = 0; i < itemsArray.length; i++){
+//     console.log(i +'-й елемент:',itemsArray[i])
+// }

@@ -1,55 +1,66 @@
 body {
-font-family: sans-serif;
-background-color: #f1f1f1;
-display: flex;
-justify-content: center; 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    font-family: 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
 }
+
 content {
-width: 420px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 10px;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
 }
 
-div{
-border: 1px solid darkgray; 
-}
 .title {
-background:rgb(253, 48, 48);
-width: auto;
-color:white;
-padding: 10px;
-border-radius: 5px;
+    width: auto;
+    padding: 10px;
+    margin-top: 20px;
 
-text-transform: uppercase;
-font-size: 20px;
-text-align:center;
-font-weight: bold;
-letter-spacing: 3px;
+    background: rgb(253,48,48);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: azure;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 3px;
 }
+
 .items {
-display:flex;
-flex-wrap: wrap;
-justify-content: space-between;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
+
 .item {
-    min-width: 180px;
+    min-width: 200px;
     min-height: 400px;
     margin-bottom: 10px;
-    padding:10px;
+    padding: 10px;
+
     background-color: #ffffff;
-    border: 1px solid rgb(194 ,194,194);
-    border-radius: 5px; 
-    box-shadow: 0 0 7px rgba(0,0,0,0.3);
+
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 5px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .item-title {
     font-weight: bold;
-
 }
+
 .item-image {
     height: 200px;
 }
@@ -114,19 +125,23 @@ justify-content: space-between;
 .bonus div:last-child sup {
     font-size: 14px;
 }
+
 .contacts p {
-margin: 3px;
-}
-.contacts p:first-child {
-font-weight: bold;
-}
-.contacts p:last-child {
-border-left: 3px solid rgb(253, 48, 48);
-}
-.license {
-font-size: 9px;
-text-align: justify;
-color: rgb(128, 128, 128);
+    margin: 3px;
 
 }
 
+.contactsp:first-child {
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contactsp:last-child {
+    border-left: 3px solid rgb(253, 48, 48);
+}
+
+.info {
+    font-size: 9px;
+    text-align: justify;
+    color: rgb(120,120,120);
+}
